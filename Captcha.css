@@ -1,0 +1,110 @@
+*{
+margin:0;  
+padding:0;
+box-sizing:border-box;
+}   
+
+body{
+background:#7289DA; 
+font-family: 'poppins', sans-serif;        
+}
+
+.container{
+padding:20px; 
+width:350px;
+border-radius:7px;
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+background:white;
+transition:all .2s;
+}
+
+.container h3{
+text-align:center;
+font-size:18px;
+}
+
+.container .captcha-box{
+height:60px;   
+width:250px;
+border:1px solid grey;
+border-radius:10px;
+padding:10px 0px 10px 0px;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:auto;
+margin-top:25px;
+}
+
+.container .captcha-box img{
+height:60px; 
+width:250px;
+border-radius:10px;
+}
+
+.container .captcha-box h3{
+position:absolute; 
+text-decoration:line-through;
+font-size:25px;
+color:#2f2f2f;
+}
+
+.container .userInput{
+all:unset;       
+height:35px;
+width:200px;
+border:1px solid grey;
+border-radius:6px;
+padding-left:10px;
+position:absolute;
+margin-top:25px;
+left:50%;
+transform:translate(-50%,-50%);
+}
+
+.container button{
+all:unset;  
+height:30px;
+margin:auto;
+color:white;
+padding:5px;
+width:100px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#7289DA; 
+border-radius:4px;
+cursor:pointer;
+}
+
+.container .check-btn{
+margin-top:70px;       
+}
+
+.container .generate-btn{
+margin-top:5px;
+width:150px;
+}
+
+.container .message{
+text-align:center;
+margin-top:16px;
+font-size:12px;
+display:none;
+}
+
+.container .message.incorrect{
+color:red;       
+}
+
+.container .message.correct{
+color:green;       
+}
+
+::selection{
+background:#7289DA; 
+color:white;        
+  }
